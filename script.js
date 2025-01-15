@@ -1,5 +1,5 @@
 function parseCSV(csvData) {
-    const lines = csvData.split('\n').filter(line => line.trim() !== ''); // Remove empty lines
+    const lines = csvData.split('\n').filter(line => line.trim() !== ''); 
     const headers = lines[0].split(',');
     const studyIndex = headers.indexOf('Study_Hours');
     const stressIndex = headers.indexOf('Stress_Level_Biosensor');
